@@ -1,0 +1,501 @@
+// Переменные
+$light-gray: #f5f5f5;
+$dark-gray: #a8a8a8;
+$text-color: #333;
+$border-color: #e0e0e0;
+$gradient-start: #a1c4fd;
+$gradient-end: #c2e9fb;
+$gradient-hover-start: #90baff;
+$gradient-hover-end: #afe5fd;
+$rad: 20px;
+$container-max-width: 1200px;
+$shad: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+// Миксины
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin gradient-button {
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: $rad;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+
+    &:hover {
+        background: linear-gradient(90deg, $gradient-hover-start, $gradient-hover-end);
+    }
+}
+
+// Шрифты
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(fonts/Inter-Regular.otf);
+}
+
+@font-face {
+    font-family: 'copperplategothic_bold';
+    src: url(fonts/copperplategothic_bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url(fonts/Inter-SemiBold.otf);
+}
+
+// Базовые стили
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter-Regular";
+}
+
+body {
+    background-color: $light-gray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+
+    img {
+        width: 24px;
+    }
+}
+
+// Шапка
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: $shad;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 130px;
+            margin-right: 20px;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        border-radius: $rad;
+        padding: 15px 20px;
+        width: 1000px;
+
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        input {
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 14px;
+            width: 100%;
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 20px;
+            cursor: pointer;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Навигация
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid $border-color;
+    min-height: 50px;
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 16px;
+
+        &:hover {
+            color: #007bff;
+        }
+    }
+
+    &.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        padding: 20px;
+        border-bottom: none;
+
+        a {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    }
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 20px auto;
+    overflow: hidden;
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+
+        .slide {
+            min-width: 100%;
+            @include flex-center;
+            background-color: #e6e6e6;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+            }
+
+            &::before {
+                top: 10px;
+                left: 10px;
+            }
+
+            &::after {
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .image-container {
+                position: relative;
+                @include flex-center;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 400px;
+                    height: 500px;
+                    background: radial-gradient(circle, rgb(29, 255, 206) 0%, transparent 70%);
+                    opacity: 0.3;
+                    border-radius: 50%;
+                }
+            }
+
+            img {
+                max-width: 200px;
+                margin-left: 20px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    .slide-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: $text-color;
+    }
+
+    .slider-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        @include flex-center;
+        justify-content: space-between;
+        transform: translateY(-50%);
+
+        .slider-btn {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            color: $text-color;
+            font-size: 20px;
+            cursor: pointer;
+            @include flex-center;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}
+
+.categories,
+.products {
+    max-width: $container-max-width;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.category-grid,
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.category-item,
+.product-item {
+    background-color: white;
+    border-radius: $rad;
+    padding: 20px;
+    text-align: center;
+    box-shadow: $shad;
+    @include flex-center(column);
+    justify-content: space-between;
+    min-height: 250px;
+    transition: transform 0.3s ease;
+
+    img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+
+    .price-container {
+        margin-bottom: 10px;
+
+        .old-price {
+            font-size: 14px;
+            color: #888;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 16px;
+            color: $text-color;
+            font-weight: bold;
+        }
+    }
+
+    button {
+        @include gradient-button;
+        width: 100%;
+    }
+
+    
+    &:hover {
+    transform: scale(1.05); 
+    }
+    
+}
+
+// Футер
+footer {
+    background-color: $dark-gray;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo img {
+        margin-right: 0;
+        width: 130px;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 20px;
+        }
+
+        span {
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+}
+
+// Медиа-запросы
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px;
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 10px 0;
+            order: 1;
+            padding: 10px;
+            max-width: 100%;
+        }
+
+        .nav-right {
+            gap: 15px;
+        }
+    }
+
+    .nav-links {
+        margin-top: 45px;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .slider-container {
+        margin: 10px;
+        margin-left: 3px;
+        padding: 0;
+
+        .slide {
+            flex-direction: column;
+            padding: 10px;
+
+            img {
+                margin-left: 0;
+                margin-top: 10px;
+                max-width: 150px;
+            }
+
+            .slide-text {
+                font-size: 16px;
+            }
+        }
+
+        .slider-buttons .slider-btn {
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+        }
+    }
+
+    .categories,
+    .products {
+        padding: 0 10px;
+    }
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .category-item,
+    .product-item {
+        min-height: 200px;
+        padding: 10px;
+
+        img {
+            max-width: 100%;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        .price-container .price,
+        .price-container .old-price {
+            font-size: 12px;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+
+        .logo {
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+
+        .contact-info {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .category-item {
+        font-size: 13px;
+    }
+}
+@media (max-width: 360px){
+    .category-item {
+        font-size: 16px;
+    }
+}

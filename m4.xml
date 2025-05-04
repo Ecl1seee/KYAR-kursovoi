@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>m4</id>
+    <name>Микроволновая печь Samsung MG23T5018AP/BW</name>
+    <price>689.00</price>
+    <oldPrice>819.00</oldPrice>
+    <image>Photo/mw4.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/mw41.svg</thumbnail>
+        <thumbnail>Photo/mw42.svg</thumbnail>
+        <thumbnail>Photo/mw43.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>SAMSUNG</value>
+        </characteristic>
+        <characteristic>
+            <name>Исполнение</name>
+            <value>Отдельностоящая</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип</name>
+            <value>Микроволны (Соло), Гриль</value>
+        </characteristic>
+        <characteristic>
+            <name>Объем микроволновой печи</name>
+            <value>23 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Внутреннее покрытие стенок</name>
+            <value>Биокерамика</value>
+        </characteristic>
+        <characteristic>
+            <name>Количество уровней мощности</name>
+            <value>6</value>
+        </characteristic>
+        <characteristic>
+            <name>Диаметр тарелки</name>
+            <value>288 мм</value>
+        </characteristic>
+        <characteristic>
+            <name>Ретродизайн</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Конструкция дверцы</name>
+            <value>Распашная</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильная микроволновая печь с энергосберегающей технологией для быстрого приготовления пищи.</description>
+    <manufacturer>
+        <name>Samsung Electronics Co., Ltd</name>
+        <address>162, Seocho-ro, Seocho-gu, Seoul, Korea</address>
+    </manufacturer>
+</product> 

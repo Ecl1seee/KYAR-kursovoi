@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>v2</id>
+    <name>Беспроводной пылесос Dreame VTV21A R20 Aqua</name>
+    <price>689.00</price>
+    <oldPrice>819.00</oldPrice>
+    <image>Photo/vacuum cleaner 4.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/v21.svg</thumbnail>
+        <thumbnail>Photo/v22.svg</thumbnail>
+        <thumbnail><Photo/>
+        <v2></v2>3.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>Dreame</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесоса</name>
+            <value>Вертикальный</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесборника</name>
+            <value>Контейнер</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип уборки</name>
+            <value>Сухая</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип питания</name>
+            <value>Сеть</value>
+        </characteristic>
+        <characteristic>
+            <name>Сила всасывания</name>
+            <value>15 кПа</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал трубы всасывания</name>
+            <value>Металл</value>
+        </characteristic>
+        <characteristic>
+            <name>Ретродизайн</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Регулятор мощности</name>
+            <value>Нет</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный пылесос с энергосберегающей технологией для хорошей уборки без лишних затрат.</description>
+    <manufacturer>
+        <name>Dreame Trading (Tianjin) Co.</name>
+        <address>Ltd., Китай, Room 2112-1-1, South District, Finance and Trade Center</address>
+    </manufacturer>
+</product> 

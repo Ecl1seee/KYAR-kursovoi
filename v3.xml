@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>v3</id>
+    <name>Пылесос POLARIS PVCW 6070</name>
+    <price>689.00</price>
+    <oldPrice>819.00</oldPrice>
+    <image>Photo/v1.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/v31.svg</thumbnail>
+        <thumbnail>Photo/v32.svg</thumbnail>
+        <thumbnail>Photo/v33.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>POLARIS</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесоса</name>
+            <value>Вертикальный</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесборника</name>
+            <value>Контейнер</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип уборки</name>
+            <value>Влажная, Сухая</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип питания</name>
+            <value>Аккумулятор</value>
+        </characteristic>
+        <characteristic>
+            <name>Сила всасывания</name>
+            <value>19 кПа</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал трубы всасывания</name>
+            <value>Металл</value>
+        </characteristic>
+        <characteristic>
+            <name>Функция сбора жидкости</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Регулятор мощности</name>
+            <value>Да</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный пылесос с энергосберегающей технологией для хорошей уборки без лишних затрат.</description>
+    <manufacturer>
+        <name>Polaris Corporation Limited</name>
+        <address>Китай, Unit 1801,18/F, Jubilee Centre, 46 Gloucester Road, Wanchai</address>
+    </manufacturer>
+</product> 

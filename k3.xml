@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>k3</id>
+    <name>Электрочайник MAUNFELD MGK-616DBK</name>
+    <price>119.00</price>
+    <oldPrice>149.00</oldPrice>
+    <image>Photo/k3.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/k31.svg</thumbnail>
+        <thumbnail>Photo/k32.svg</thumbnail>
+        <thumbnail>Photo/k33.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>MAUNFELD</value>
+        </characteristic>
+        <characteristic>
+            <name>Защита от перегрева </name>
+            <value>Да</value>
+        </characteristic>
+        <characteristic>
+            <name>Объем</name>
+            <value>1.7 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Мощность</name>
+            <value>2200 Вт</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал корпуса</name>
+            <value>Металл, Пластик, Стекло</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал нагревательного элемента</name>
+            <value>Нержавеющая сталь</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип нагревательного элемента</name>
+            <value>Закрытый</value>
+        </characteristic>
+        <characteristic>
+            <name>Подсветка</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Таймер </name>
+            <value>Нет</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный и функциональный чайник для быстрого нагрева воды.</description>
+    <manufacturer>
+        <name>Zhongshan Youlong Kitchen Applances Co.Ltd.</name>
+        <address>Китай, No.103, SanXin Road, Sanjiao Town, Zhongshan, Guangdong, China</address>
+    </manufacturer>
+</product> 

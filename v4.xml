@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>v4</id>
+    <name>Пылесос портативный POLARIS PVCS 4070</name>
+    <price>140.00</price>
+    <oldPrice>200.00</oldPrice>
+    <image>Photo/v4.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/v41.svg</thumbnail>
+        <thumbnail>Photo/v42.svg</thumbnail>
+        <thumbnail>Photo/v43.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>POLARIS</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесоса</name>
+            <value>Вертикальный</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесборника</name>
+            <value>Контейнер</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип уборки</name>
+            <value>Влажная, Сухая</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип питания</name>
+            <value>Аккумулятор</value>
+        </characteristic>
+        <characteristic>
+            <name>Сила всасывания</name>
+            <value>17 кПа</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал трубы всасывания</name>
+            <value>Металл</value>
+        </characteristic>
+        <characteristic>
+            <name>Функция сбора жидкости</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Регулятор мощности</name>
+            <value>На рукоятке</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный пылесос с энергосберегающей технологией для хорошей уборки без лишних затрат.</description>
+    <manufacturer>
+        <name>Polaris Corporation Limited</name>
+        <address>Китай, Unit 1801,18/F, Jubilee Centre, 46 Gloucester Road, Wanchai</address>
+    </manufacturer>
+</product> 

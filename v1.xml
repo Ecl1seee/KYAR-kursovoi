@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>v1</id>
+    <name>Вертикальный пылесос Deerma DX700S Plus</name>
+    <price>689.00</price>
+    <oldPrice>819.00</oldPrice>
+    <image>Photo/vacuum cleaner 3.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/v11.svg</thumbnail>
+        <thumbnail>Photo/v12.svg</thumbnail>
+        <thumbnail>Photo/v13.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>Deerma</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесоса</name>
+            <value>Вертикальный</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип пылесборника</name>
+            <value>Контейнер</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип уборки</name>
+            <value>Сухая</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип питания</name>
+            <value>Сеть</value>
+        </characteristic>
+        <characteristic>
+            <name>Сила всасывания</name>
+            <value>15 кПа</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал трубы всасывания</name>
+            <value>Металл</value>
+        </characteristic>
+        <characteristic>
+            <name>Функция сбора жидкости</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Регулятор мощности</name>
+            <value>Нет</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный пылесос с энергосберегающей технологией для хорошей уборки без лишних затрат.</description>
+    <manufacturer>
+        <name>oshan Shunde Deerma Electric Appliances Co.</name>
+        <address>LTD., Китай, Longhui Road, Malong Village Committee</address>
+    </manufacturer>
+</product> 

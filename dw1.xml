@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>dw1</id>
+    <name>Посудомоечная машина Bosch Serie 2 SMS27HV2E</name>
+    <price>1999.00</price>
+    <oldPrice>2499.00</oldPrice>
+    <image>Photo/dw1.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/dish31.svg</thumbnail>
+        <thumbnail>Photo/dish32.svg</thumbnail>
+        <thumbnail>Photo/dish33.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>Bosch</value>
+        </characteristic>
+        <characteristic>
+            <name>Вместимость</name>
+            <value>13 комплектов</value>
+        </characteristic>
+        <characteristic>
+            <name>Расход воды за цикл</name>
+            <value>9.5 литра</value>
+        </characteristic>
+        <characteristic>
+            <name>Возможность использования средств 3 в 1</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Защита от протечек</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Уровень шума</name>
+            <value>46 дБ</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал внутренней поверхности</name>
+            <value>Нержавеющая сталь</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип сушки</name>
+            <value>Конденсационный</value>
+        </characteristic>
+        <characteristic>
+            <name>Управление</name>
+            <value>Электронное</value>
+        </characteristic>
+    </characteristics>
+    <description>Прочная и стильная посудомоечная машина с несколькими программами мойки для идеального результата.</description>
+    <manufacturer>
+        <name>BSH Hausgeräte GmbH</name>
+        <address>Gertraud-Weber-Strasse, 34, 81739 München, BRD</address>
+    </manufacturer>
+</product>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHome - Product</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Photo/techome.svg" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <img src="Photo/search.svg" alt="Search">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div class="nav-right">
+            <a href="registration.html"><div class="profile">
+                <img src="Photo/account.svg" alt="Profile">
+                <span>Аккаунт</span>
+            </div></a>
+            <a href="basket.html"><img src="Photo/basket.svg" alt="Cart"></a>
+            <div class="burger-menu">
+                <img src="Photo/burger.svg" alt="Menu" id="burger-toggle">
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="TecHome.html">Главная</a>
+        <a href="k1.html">Акции</a>
+        <a href="cata.html">Каталог</a>
+        <a href="k2.html">Чайники</a>
+        <a href="v3.html">Пылесосы</a>
+        <a href="fr3.html">Холодильники</a>
+        <a href="dw3.html">Посудомоечные машины</a>
+        <a href="m4.html">Микроволновые печи</a>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-main">
+            <div class="product-header">
+                <h1 id="product-name"></h1>
+            </div>
+            <div class="product-content">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-image" src="" alt="Product">
+                    </div>
+                    <div class="thumbnail-images" id="thumbnails">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="price-container">
+                        <span class="price" id="price"></span>
+                        <br>
+                        <span class="old-price" id="old-price"></span>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-to-cart">Добавить в корзину</button>
+                        <button class="buy-now">Купить сейчас</button>
+                    </div>
+                </div>
+            </div>
+            <div class="characteristics">
+                <h2>Характеристики</h2>
+                <div class="characteristics-table" id="characteristics">
+                </div>
+                <div class="description">
+                    <p id="description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="product-sidebar">
+            <div class="sidebar-info">
+                <p><strong>Название:</strong> <span id="sidebar-name"></span></p>
+                <p><strong>Бренд:</strong> <span id="sidebar-brand"></span></p>
+                <p><strong>Производитель:</strong> <span id="manufacturer"></span></p>
+            </div>
+            <div class="sidebar-disclaimer">
+                <p>Производитель оставляет за собой право изменять внешний вид, характеристики и комплектацию товара, предварительно не уведомляя продавцов и потребителей.</p>
+                <p>Просим вас отнестись с пониманием к данному факту и заранее приносить извинения за возможные неточности в описании и фотографиях товара.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="Photo/techome.svg" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <img src="Photo/mtc.svg" alt="Phone">
+            <span>+375 44 725 30 14</span>
+            <img src="Photo/email.svg" alt="Email">
+            <span>techhome@gmail.com</span>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById('nav-links');
+        const burgerToggle = document.getElementById('burger-toggle');
+
+        burgerToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {    
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Функция для загрузки данных из XML
+        async function loadProductData() {
+            try {
+                const response = await fetch('fr1.xml');
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+                // Заполняем основные данные
+                document.getElementById('product-name').textContent = xmlDoc.querySelector('name').textContent;
+                document.getElementById('main-image').src = xmlDoc.querySelector('image').textContent;
+                document.getElementById('price').textContent = xmlDoc.querySelector('price').textContent + ' BYN';
+                document.getElementById('old-price').textContent = xmlDoc.querySelector('oldPrice').textContent + ' BYN';
+                document.getElementById('description').textContent = xmlDoc.querySelector('description').textContent;
+
+                // Заполняем миниатюры
+                const thumbnailsContainer = document.getElementById('thumbnails');
+                thumbnailsContainer.innerHTML = '';
+                xmlDoc.querySelectorAll('thumbnails thumbnail').forEach(thumb => {
+                    const img = document.createElement('img');
+                    img.src = thumb.textContent;
+                    img.alt = 'Thumbnail';
+                    thumbnailsContainer.appendChild(img);
+                });
+
+                // Заполняем характеристики
+                const characteristicsContainer = document.getElementById('characteristics');
+                characteristicsContainer.innerHTML = '';
+                xmlDoc.querySelectorAll('characteristics characteristic').forEach(char => {
+                    const div = document.createElement('div');
+                    div.innerHTML = `<span>${char.querySelector('name').textContent}</span><span>${char.querySelector('value').textContent}</span>`;
+                    characteristicsContainer.appendChild(div);
+                });
+
+                // Заполняем информацию в сайдбаре
+                document.getElementById('sidebar-name').textContent = xmlDoc.querySelector('name').textContent;
+                document.getElementById('sidebar-brand').textContent = xmlDoc.querySelector('characteristics characteristic value').textContent;
+                document.getElementById('manufacturer').textContent = 
+                    xmlDoc.querySelector('manufacturer name').textContent + ', ' + 
+                    xmlDoc.querySelector('manufacturer address').textContent;
+
+            } catch (error) {
+                console.error('Ошибка при загрузке данных:', error);
+            }
+        }
+
+        // Загружаем данные при загрузке страницы
+        document.addEventListener('DOMContentLoaded', loadProductData);
+    </script>
+</body>
+</html>

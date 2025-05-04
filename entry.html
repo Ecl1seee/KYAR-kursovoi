@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="entry.css">
+    <title>Вход</title>
+</head>
+
+<body>
+    <form class="forma" onsubmit="validateCredentials(event)">
+        <h2 class="reg">Вход</h2>
+        <div class="form-group">
+            <input type="email" name="Email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group password-group">
+            <input type="password" name="Pass" id="password" placeholder="Пароль" required>
+        </div>
+        <div class="button-container">
+            <button type="submit">ВОЙТИ</button>
+            <a href="registration.html">Нет аккаунта?</a>
+        </div>
+    </form>
+    <script>
+        function validateCredentials(event) {
+            event.preventDefault();
+            const form = event.target;
+            const email = form.querySelector('input[name="Email"]').value;
+            const password = form.querySelector('input[name="Pass"]').value;   
+            const storedEmail = localStorage.getItem('registeredEmail');
+            const storedPassword = localStorage.getItem('registeredPassword');  
+
+            if (!storedEmail || !storedPassword) {
+                alert('Сначала необходимо зарегистрироваться');
+                window.location.href = 'registration.html';
+                return;
+            }
+
+            if (email === storedEmail && password === storedPassword) {
+                alert('Вход выполнен успешно!');
+                window.location.href = 'TecHome.html';
+            } else {
+                alert('Неверный email или пароль');
+            }
+        }
+    </script>
+</body>
+</html>

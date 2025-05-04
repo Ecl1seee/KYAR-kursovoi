@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>fr1</id>
+    <name>Холодильник LG DoorCooling+ GS-B509FAPW</name>
+    <price>2999.00</price>
+    <oldPrice>3499.00</oldPrice>
+    <image>Photo/f1.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/f11.svg</thumbnail>
+        <thumbnail>Photo/f12.svg</thumbnail>
+        <thumbnail>Photo/f14.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>LG</value>
+        </characteristic>
+        <characteristic>
+            <name>Исполнение</name>
+            <value>Отдельностоящий</value>
+        </characteristic>
+        <characteristic>
+            <name>Конструкция</name>
+            <value>С нижней морозильной камерой</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип холодильника</name>
+            <value>Холодильник с морозильником</value>
+        </characteristic>
+        <characteristic>
+            <name>Количество камер</name>
+            <value>2</value>
+        </characteristic>
+        <characteristic>
+            <name>Уровень шума</name>
+            <value>45 дБ</value>
+        </characteristic>
+        <characteristic>
+            <name>Общий полезный объем</name>
+            <value>387 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Антибактериальное покрытие</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал покрытия корпуса</name>
+            <value>Металл</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный холодильник с энергосберегающей технологией для свежести продуктов без лишних затрат.</description>
+    <manufacturer>
+        <name>LG Electronics Inc.</name>
+        <address>120 Yeoi-daero, Youngdungpo-gu, Seoul, Korea</address>
+    </manufacturer>
+</product> 

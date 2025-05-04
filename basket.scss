@@ -1,0 +1,196 @@
+// Переменные
+$white: #fff;
+$light-gray: #f5f5f5;
+$dark-gray: #e0e0e0;
+$text-color: #333;
+$border-color: #ddd;
+$gradient-start: #a1c4fd;
+$gradient-end: #c2e9fb;
+$gradient-hover-start: #90baff;
+$gradient-hover-end: #afe5fd;
+$border-radius: 20px;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$container-max-width: 1200px;
+
+// Базовые стили
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $light-gray;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+// Миксины
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin gradient-button {
+    background: linear-gradient(90deg, $gradient-start, $gradient-end);
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+
+    &:hover {
+        background: linear-gradient(90deg, $gradient-hover-start, $gradient-hover-end);
+    }
+}
+
+@mixin box-shadow {
+    box-shadow: $box-shadow;
+}
+
+// Стили корзины
+.cart-container {
+    max-width: $container-max-width;
+    margin: 20px auto;
+    padding: 0 20px;
+
+    .cart-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: $text-color;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        padding: 20px;
+        border-radius: $border-radius;
+        margin-bottom: 20px;
+        @include box-shadow;
+
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-right: 20px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+
+            p {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: $text-color;
+
+                &:first-child {
+                    font-weight: bold;
+                }
+            }
+
+            .quantity-control {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-top: 10px;
+
+                button {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $border-color;
+                    background-color: $light-gray;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    @include flex-center;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: $dark-gray;
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    min-width: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .cart-summary {
+        background-color: $white;
+        padding: 20px;
+        border-radius: $border-radius;
+        @include box-shadow;
+        margin-top: 20px;
+
+        .total-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .checkout-container {
+            text-align: right;
+
+            .checkout-button {
+                @include gradient-button;
+            }
+        }
+    }
+}
+footer{
+    margin-top: 1000px;
+}
+
+// Медиа запросы
+@media (max-width: 768px) {
+    .cart-container {
+        .cart-item {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+
+            img {
+                margin: 0 auto 15px;
+            }
+
+            .cart-item-details {
+                width: 100%;
+
+                .quantity-control {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .cart-summary {
+            text-align: center;
+
+            .total-price {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .checkout-container {
+                .checkout-button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+} 

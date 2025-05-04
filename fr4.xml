@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>fr4</id>
+    <name>Холодильник ATLANT MXM-2808-90</name>
+    <price>899.00</price>
+    <oldPrice>1099.00</oldPrice>
+    <image>Photo/f4.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/f41.svg</thumbnail>
+        <thumbnail>Photo/f42.svg</thumbnail>
+        <thumbnail>Photo/f43.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>ATLANT</value>
+        </characteristic>
+        <characteristic>
+            <name>Исполнение</name>
+            <value>Отдельностоящий</value>
+        </characteristic>
+        <characteristic>
+            <name>Конструкция</name>
+            <value>С нижней морозильной камерой</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип холодильника</name>
+            <value>Холодильник с морозильником</value>
+        </characteristic>
+        <characteristic>
+            <name>Количество камер</name>
+            <value>2</value>
+        </characteristic>
+        <characteristic>
+            <name>Уровень шума</name>
+            <value>41 дБ</value>
+        </characteristic>
+        <characteristic>
+            <name>Общий полезный объем</name>
+            <value>255 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Антибактериальное покрытие</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал покрытия корпуса</name>
+            <value>Краска</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный холодильник с энергосберегающей технологией для свежести продуктов без лишних затрат.</description>
+    <manufacturer>
+        <name>ЗАО "Атлант"</name>
+        <address>220035, г.Минск, пр-т Победителей, 61</address>
+    </manufacturer>
+</product> 

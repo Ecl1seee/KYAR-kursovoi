@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <form class="forma" onsubmit="storeRegistrationData(event)">
+        <h2 class="reg">Зарегистрироваться</h2>
+        <div class="form-row">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="surname" id="surname" placeholder="Фамилия" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="email" name="Email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group password-group">
+            <input type="password" name="Pass" id="password" placeholder="Пароль" required>
+        </div>
+        <div class="button-container">
+            <button type="submit">ПРОДОЛЖИТЬ</button>
+            <a href="entry.html">Уже есть аккаунт?</a>
+        </div>
+    </form>
+    <script>
+        function storeRegistrationData(event) {
+            event.preventDefault();
+            const form = event.target;
+            const email = form.querySelector('input[name="Email"]').value;
+            const password = form.querySelector('input[name="Pass"]').value;
+
+            localStorage.setItem('registeredEmail', email);
+            localStorage.setItem('registeredPassword', password);
+
+            window.location.href = 'entry.html';
+        }
+    </script>
+</body>
+
+</html>

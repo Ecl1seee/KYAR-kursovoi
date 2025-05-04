@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>k1</id>
+    <name>Электрочайник TECHNO D2215EA</name>
+    <price>89.00</price>
+    <oldPrice>159.00</oldPrice>
+    <image>Photo/k1.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/k11.svg</thumbnail>
+        <thumbnail>Photo/k12.svg</thumbnail>
+        <thumbnail>Photo/k13.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>TECHNO</value>
+        </characteristic>
+        <characteristic>
+            <name>Защита от перегрева </name>
+            <value>Да</value>
+        </characteristic>
+        <characteristic>
+            <name>Объем</name>
+            <value>1.5 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Мощность</name>
+            <value>2200 Вт</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал корпуса</name>
+            <value>Нержавеющая сталь</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал нагревательного элемента</name>
+            <value>Нержавеющая сталь</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип нагревательного элемента</name>
+            <value>Скрытый</value>
+        </characteristic>
+        <characteristic>
+            <name>Подсветка</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Таймер </name>
+            <value>Нет</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный и функциональный чайник для быстрого нагрева воды.</description>
+    <manufacturer>
+        <name>Homa Appliances Co., Ltd.,</name>
+        <address> Китай, No.54 North Dongfu Road, Nantou, Zhongshan, Guangdong,</address>
+    </manufacturer>
+</product> 

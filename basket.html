@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - TecHome</title>
+    <link rel="stylesheet" href="main-page.css">
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Photo/techome.svg" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <img src="Photo/search.svg" alt="Search">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div class="nav-right">
+            <a href="registration.html"><div class="profile">
+                <img src="Photo/account.svg" alt="Profile">
+                <span>Аккаунт</span>
+            </div></a>
+            <a href="basket.html"><img src="Photo/basket.svg" alt="Cart"></a>
+            <div class="burger-menu">
+                <img src="Photo/burger.svg" alt="Menu" id="burger-toggle">
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="TecHome.html">Главная</a>
+        <a href="k1.html">Акции</a>
+        <a href="cata.html">Каталог</a>
+        <a href="k2.html">Чайники</a>
+        <a href="v3.html">Пылесосы</a>
+        <a href="fr3.html">Холодильники</a>
+        <a href="dw3.html">Посудомоечные машины</a>
+        <a href="m4.html">Микроволновые печи</a>
+    </nav>
+
+    <main>
+        <div class="cart-container">
+            <h1 class="cart-title">Корзина</h1>
+            <div id="cart-items">
+                <div class="cart-item">
+                    <img src="Photo/dw1.svg" alt="Посудомоечная машина">
+                    <div class="cart-item-details">
+                        <p>Посудомоечная машина Bosch Serie 2 SMS2HVI72E</p>
+                        <p>1999.00 BYN</p>
+                        <div class="quantity-control">
+                            <button onclick="updateQuantity(0, -1)">-</button>
+                            <span>1</span>
+                            <button onclick="updateQuantity(0, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="total-price">
+                    <span>Итого:</span>
+                    <span id="total-amount">0.00 BYN</span>
+                </div>
+                <div class="checkout-container">
+                    <button class="checkout-button" onclick="clearCart()">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>        
+        <div class="logo">
+            <img src="Photo/techome.svg" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <img src="Photo/mtc.svg" alt="Phone">
+            <span>+375 44 725 30 14</span>
+            <img src="Photo/email.svg" alt="Email">
+            <span>techhome@gmail.com</span>
+        </div>
+    </footer>
+
+    <script>
+        // Обработчик для бургер-меню
+        document.getElementById('burger-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+
+        // Функция для обновления количества товаров
+        function updateQuantity(index, change) {
+            const quantityElement = document.querySelector('.cart-item .quantity-control span');
+            let quantity = parseInt(quantityElement.textContent);
+            quantity += change;
+            
+            if (quantity <= 0) {
+                document.querySelector('.cart-item').remove();
+                updateTotal();
+            } else {
+                quantityElement.textContent = quantity;
+                updateTotal();
+            }
+        }
+
+        // Функция для обновления общей суммы
+        function updateTotal() {
+            const priceElement = document.querySelector('.cart-item-details p:nth-child(2)');
+            const quantityElement = document.querySelector('.cart-item .quantity-control span');
+            
+            if (priceElement && quantityElement) {
+                const price = parseFloat(priceElement.textContent);
+                const quantity = parseInt(quantityElement.textContent);
+                const total = price * quantity;
+                document.getElementById('total-amount').textContent = `${total.toFixed(2)} BYN`;
+            } else {
+                document.getElementById('total-amount').textContent = '0.00 BYN';
+            }
+        }
+
+        // Функция для очистки корзины
+        function clearCart() {
+            const cartItem = document.querySelector('.cart-item');
+            if (cartItem) {
+                cartItem.remove();
+                updateTotal();
+            }
+        }
+
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', updateTotal);
+    </script>
+</body>
+</html>

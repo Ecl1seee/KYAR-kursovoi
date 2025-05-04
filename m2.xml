@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>m2</id>
+    <name>Микроволновая печь LG MS2032GAS</name>
+    <price>429.00</price>
+    <oldPrice>549.00</oldPrice>
+    <image>Photo/mw2.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/mw21.svg</thumbnail>
+        <thumbnail>Photo/mw22.svg</thumbnail>
+        <thumbnail>Photo/mw23.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>LG</value>
+        </characteristic>
+        <characteristic>
+            <name>Исполнение</name>
+            <value>Отдельностоящая</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип</name>
+            <value>Микроволны (Соло)</value>
+        </characteristic>
+        <characteristic>
+            <name>Объем микроволновой печи</name>
+            <value>20 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Внутреннее покрытие стенок</name>
+            <value>Эмаль</value>
+        </characteristic>
+        <characteristic>
+            <name>Количество уровней мощности</name>
+            <value>10</value>
+        </characteristic>
+        <characteristic>
+            <name>Диаметр тарелки</name>
+            <value>245 мм</value>
+        </characteristic>
+        <characteristic>
+            <name>Ретродизайн</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Конструкция дверцы</name>
+            <value>Распашная</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильная микроволновая печь с энергосберегающей технологией для быстрого приготовления пищи.</description>
+    <manufacturer>
+        <name>LG Electronics Inc.</name>
+        <address>120 Yeoi-daero, Youngdungpo-gu, Seoul, Korea</address>
+    </manufacturer>
+</product> 

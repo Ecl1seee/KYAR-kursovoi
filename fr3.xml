@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>fr3</id>
+    <name>Холодильник Haier HB18FGSAAARU</name>
+    <price>6999.00</price>
+    <oldPrice>7100.00</oldPrice>
+    <image>Photo/f3.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/f31.svg</thumbnail>
+        <thumbnail>Photo/f32.svg</thumbnail>
+        <thumbnail>Photo/f33.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>Haier</value>
+        </characteristic>
+        <characteristic>
+            <name>Исполнение</name>
+            <value>Отдельностоящий</value>
+        </characteristic>
+        <characteristic>
+            <name>Конструкция</name>
+            <value>Многодверный</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип холодильника</name>
+            <value>Холодильник с морозильником</value>
+        </characteristic>
+        <characteristic>
+            <name>Количество камер</name>
+            <value>2</value>
+        </characteristic>
+        <characteristic>
+            <name>Уровень шума</name>
+            <value>38 дБ</value>
+        </characteristic>
+        <characteristic>
+            <name>Общий полезный объем</name>
+            <value>508 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Антибактериальное покрытие</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал покрытия корпуса</name>
+            <value>Стекло</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный холодильник с энергосберегающей технологией для свежести продуктов без лишних затрат.</description>
+    <manufacturer>
+        <name>Haier Overseas Electric Appliances Corp. Ltd</name>
+        <address>Room S401, Haier Brand Building, Haier Industry park</address>
+    </manufacturer>
+</product> 

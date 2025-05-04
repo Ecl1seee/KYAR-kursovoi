@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>dw2</id>
+    <name>Посудомоечная машина Hyundai DF105</name>
+    <price>1039.00</price>
+    <oldPrice>1139.00</oldPrice>
+    <image>Photo/dw2.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/dw21.svg</thumbnail>
+        <thumbnail>Photo/dw22.svg</thumbnail>
+        <thumbnail>Photo/dw23.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>Hyundai</value>
+        </characteristic>
+        <characteristic>
+            <name>Вместимость</name>
+            <value>12 комплектов</value>
+        </characteristic>
+        <characteristic>
+            <name>Расход воды за цикл</name>
+            <value>7.5 литра</value>
+        </characteristic>
+        <characteristic>
+            <name>Возможность использования средств 3 в 1</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Защита от протечек</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Уровень шума</name>
+            <value>52 дБ</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал внутренней поверхности</name>
+            <value>Пластик</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип сушки</name>
+            <value>Конденсационный</value>
+        </characteristic>
+        <characteristic>
+            <name>Управление</name>
+            <value>Электронное</value>
+        </characteristic>
+    </characteristics>
+    <description>Прочная и стильная посудомоечная машина с несколькими программами мойки для идеального результата.</description>
+    <manufacturer>
+        <name>Hyundai Electronics</name>
+        <address>118, Seocho-daero, Seocho-gu, Seoul, Republic of Korea</address>
+    </manufacturer>
+</product> 

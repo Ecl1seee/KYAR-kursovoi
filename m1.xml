@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>m1</id>
+    <name>Микроволновая печь Haier HMB-MM207SA</name>
+    <price>270.00</price>
+    <oldPrice>330.00</oldPrice>
+    <image>Photo/mw1.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/mw11.svg</thumbnail>
+        <thumbnail>Photo/mw12.svg</thumbnail>
+        <thumbnail>Photo/mw13.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>Haier</value>
+        </characteristic>
+        <characteristic>
+            <name>Исполнение</name>
+            <value>Отдельностоящая</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип</name>
+            <value>Микроволны (Соло)</value>
+        </characteristic>
+        <characteristic>
+            <name>Объем микроволновой печи</name>
+            <value>20 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Внутреннее покрытие стенок</name>
+            <value>Эмаль</value>
+        </characteristic>
+        <characteristic>
+            <name>Количество уровней мощности</name>
+            <value>5</value>
+        </characteristic>
+        <characteristic>
+            <name>Диаметр тарелки</name>
+            <value>255 мм</value>
+        </characteristic>
+        <characteristic>
+            <name>Ретродизайн</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Конструкция дверцы</name>
+            <value>Распашная</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильная микроволновая печь с энергосберегающей технологией для быстрого приготовления пищи.</description>
+    <manufacturer>
+        <name>Haier Overseas Electric Appliances Corp. Ltd</name>
+        <address>Room S401, Haier Brand Building, Китай</address>
+    </manufacturer>
+</product> 

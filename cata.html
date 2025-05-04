@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cata.css">
+    <title>Каталог товаров</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Photo/techome.svg" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <img src="Photo/search.svg" alt="Search">
+            <input type="text" placeholder="Поиск...">
+        </div>
+        <div class="nav-right">
+            <a href="registration.html">
+                <div class="profile">
+                    <img src="Photo/account.svg" alt="Profile">
+                    <span>Аккаунт</span>
+                </div>
+            </a>
+            <a href="basket.html"><img src="Photo/basket.svg" alt="Cart"></a>
+            <div class="burger-menu1">
+                <img src="Photo/burger.svg" alt="Menu" id="burger-toggle">
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="TecHome.html">Главная</a>
+        <a href="k1.html">Акции</a>
+        <a href="k2.html">Чайники</a>
+        <a href="v3.html">Пылесосы</a>
+        <a href="fr3.html">Холодильники</a>
+        <a href="dw3.html">Посудомоечные машины</a>
+        <a href="m4.html">Микроволновые печи</a>
+    </nav>
+    <div class="container">
+        <div class="burger-menu" onclick="toggleFilter()">☰</div>
+        <div class="catalog" id="catalog">
+            <div class="item" data-type="холодильник" data-price="2999" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/f1.svg" alt="Холодильник LG">
+                    <p class="product-title">Холодильник LG DoorCooling+ GC-B509FAPW</p>
+                    <p class="price">2 999 BYN</p>
+                    <p class="old-price">3 499 BYN</p>
+                </div>
+                <a href="fr1.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="холодильник" data-price="1899" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/f2.svg" alt="Холодильник BEKO">
+                    <p class="product-title">Холодильник BEKO B3R0CNK332HXBR</p>
+                    <p class="price">1 899.00 BYN</p>
+                    <p class="old-price">2 099.00 BYN</p>
+                </div>
+                <a href="fr2.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="холодильник" data-price="6999" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/f3.svg" alt="Холодильник Haier">
+                    <p class="product-title">Холодильник Haier HB18FGSAAARU</p>
+                    <p class="price">6 999.00 BYN</p>
+                    <p class="old-price">7 100.00 BYN</p>
+                </div>
+                <a href="fr3.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="холодильник" data-price="899" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/f4.svg" alt="Холодильник ATLANT">
+                    <p class="product-title">Холодильник ATLANT MXM-2808-90</p>
+                    <p class="price">899.00 BYN</p>
+                    <p class="old-price">1 099.00 BYN</p>
+                </div>
+                <a href="fr4.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="посудомойка" data-price="1999" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/dw1.svg" alt="Посудомойка Bosch">
+                    <p class="product-title">Посудомоечная машина Bosch Serie 2 SMS27HV2E</p>
+                    <p class="price">1 999.00 BYN</p>
+                    <p class="old-price">2 499.00 BYN</p>
+                </div>
+                <a href="dw1.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="посудомойка" data-price="1039" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/dw2.svg" alt="Посудомоечная машина Hyundai">
+                    <p class="product-title">Посудомоечная машина Hyundai DF105</p>
+                    <p class="price">1 039.00 BYN</p>
+                    <p class="old-price">1 299.00 BYN</p>
+                </div>
+                <a href="dw2.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="посудомойка" data-price="2049" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/dw3.svg" alt="Посудомоечная машина Bosch">
+                    <p class="product-title">Посудомоечная машина Bosch Serie 4 SMS45DI10Q</p>
+                    <p class="price">2 049.00 BYN</p>
+                    <p class="old-price">2 299.00 BYN</p>
+                </div>
+                <a href="dw3.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="посудомойка" data-price="1449" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/dw4.svg" alt="Посудомоечная машина Beko">
+                    <p class="product-title">Посудомоечная машина Beko BDFN15421S</p>
+                    <p class="price">1 449.00 BYN</p>
+                    <p class="old-price">1 639.00 BYN</p>
+                </div>
+                <a href="dw4.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="чайник" data-price="89" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/k1.svg" alt="Холодильник Samsung">
+                    <p class="product-title">Электрочайник TECHNO D2215EA</p>
+                    <p class="price">89.00 BYN</p>
+                    <p class="old-price">159.00 BYN</p>
+                </div>
+                <a href="k1.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="чайник" data-price="119" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/k2.svg" alt="Пылесос Xiaomi">
+                    <p class="product-title">Электрочайник TECHNO D2215EB</p>
+                    <p class="price">119.00 BYN</p>
+                    <p class="old-price">149.00 BYN</p>
+                </div>
+                <a href="k2.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="чайник" data-price="119" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/k3.svg" alt="Микроволновая LG">
+                    <p class="product-title">Электрочайник MAUNFELD MGK-616DBK</p>
+                    <p class="price">119 BYN</p>
+                    <p class="old-price">149 BYN</p>
+                </div>
+                <a href="k3.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="чайник" data-price="115" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/k4.svg" alt="Чайник Philips">
+                    <p class="product-title">Электрочайник Evolution KG1015S THERMOCONTRO</p>
+                    <p class="price">115.00 BYN</p>
+                    <p class="old-price">159.00 BYN</p>
+                </div>
+                <a href="k4.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="пылесос" data-price="140" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/vacuum cleaner 3.svg" alt="Посудомоечная Siemens">
+                    <p class="product-title">Вертикальный пылесос Deerma DX700S PlusL</p>
+                    <p class="price">140.00 BYN</p>
+                    <p class="old-price">200.00 BYN</p>
+                </div>
+                <a href="v1.html" class="more-btn">Подробнее</a>
+            </div>
+
+            <div class="item" data-type="пылесос" data-price="140" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/vacuum cleaner 4.svg" alt="Холодильник Bosch">
+                    <p class="product-title">Вертикальный пылесос Deerma DX700S PlusL</p>
+                    <p class="price">140.00 BYN</p>
+                    <p class="old-price">200.00 BYN</p>
+                </div>
+                <a href="v2.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="пылесос" data-price="1699" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/v1.svg" alt="Плита Gorenje">
+                    <p class="product-title">Пылесос POLARIS PVCW 6070</p>
+                    <p class="price">1 699.00 BYN</p>
+                    <p class="old-price">1 799.00 BYN</p>
+                </div>
+                <a href="v3.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="пылесос" data-price="140" data-sale="true">
+                <div class="item-content">
+                    <img src="Photo/v4.svg" alt="Плита Hansa">
+                    <p class="product-title">Пылесос портативный POLARIS PVCS 4070</p>
+                    <p class="price">140.00 BYN</p>
+                    <p class="old-price">200.00 BYN</p>
+                </div>
+                <a href="v4.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="микроволновка" data-price="270" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/mw1.svg" alt="Посудомоечная Siemens">
+                    <p class="product-title">Микроволновая печь Haier HMB-MM207SA</p>
+                    <p class="price">270.00 BYN</p>
+                    <p class="old-price">330.00 BYN</p>
+                </div>
+                <a href="m1.html" class="more-btn">Подробнее</a>
+            </div>
+
+            <div class="item" data-type="микроволновка" data-price="429" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/mw2.svg" alt="Холодильник Bosch">
+                    <p class="product-title">Микроволновая печь LG MS2032GAS</p>
+                    <p class="price">429.00 BYN</p>
+                    <p class="old-price">549.00 BYN</p>
+                </div>
+                <a href="m2.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="микроволновка" data-price="539" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/mw3.svg" alt="Плита Gorenje">
+                    <p class="product-title">Микроволновая печь Samsung MS23DG450</p>
+                    <p class="price">539.00 BYN</p>
+                    <p class="old-price">625.00 BYN</p>
+                </div>
+                <a href="m3.html" class="more-btn">Подробнее</a>
+            </div>
+            <div class="item" data-type="микроволновка" data-price="689" data-sale="false">
+                <div class="item-content">
+                    <img src="Photo/mw4.svg" alt="Плита Hansa">
+                    <p class="product-title">Микроволновая печь Samsung MG23T5018AP/BW</p>
+                    <p class="price">689.00 BYN</p>
+                    <p class="old-price">819.00 BYN</p>
+                </div>
+                <a href="m4.html" class="more-btn">Подробнее</a>
+            </div>
+        </div>
+        <div class="filter">
+            <h2>Фильтры</h2>
+            <div class="close-btn" onclick="toggleFilter()">✖</div>
+            <h4>Цена (BYN)</h4>
+            <label>от <input type="number" id="priceFrom" min="0"></label>
+            <label>до <input type="number" id="priceTo" min="0"></label>
+            <h4>Тип товара</h4>
+            <label><input type="checkbox" name="type" value="холодильник"> Холодильники</label>
+            <label><input type="checkbox" name="type" value="чайник"> Чайники</label>
+            <label><input type="checkbox" name="type" value="микроволновка"> Микроволновки</label>
+            <label><input type="checkbox" name="type" value="посудомойка"> Посудомойки</label>
+            <label><input type="checkbox" name="type" value="пылесос"> Пылесосы</label>
+            <h4>Акции</h4>
+            <label><input type="checkbox" name="sale" value="true"> Да</label>
+            <label><input type="checkbox" name="sale" value="false"> Нет</label>
+            <button onclick="resetFilters()">Сбросить фильтры</button>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="Photo/techome.svg" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <img src="Photo/mtc.svg " alt="Phone">
+            <span>+375 44 725 30 14</span>
+            <img src="Photo/email.svg" alt="Email">
+            <span>techhome@gmail.com</span>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById('nav-links');
+        const burgerToggle = document.getElementById('burger-toggle');
+
+        burgerToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+
+        // Закрытие меню при клике на ссылку
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.classList.remove('active');
+            });
+        });
+        function filterItems() {
+            const priceFrom = parseInt(document.getElementById('priceFrom').value) || 0;
+            const priceTo = parseInt(document.getElementById('priceTo').value) || 9999;
+            const typeCheckboxes = document.querySelectorAll('input[name="type"]');
+            const saleCheckboxes = document.querySelectorAll('input[name="sale"]');
+            const items = document.getElementsByClassName('item');
+
+            for (let item of items) {
+                const itemPrice = parseInt(item.getAttribute('data-price'));
+                const itemType = item.getAttribute('data-type');
+                const itemSale = item.getAttribute('data-sale') === 'true';
+                let show = true;
+
+                if (itemPrice < priceFrom || itemPrice > priceTo) show = false;
+
+                let typeSelected = false;
+                for (let checkbox of typeCheckboxes) {
+                    if (checkbox.checked && checkbox.value === itemType) {
+                        typeSelected = true;
+                        break;
+                    }
+                }
+                if (Array.from(typeCheckboxes).every(cb => !cb.checked) || typeSelected) {
+                    show = show && true;
+                } else {
+                    show = false;
+                }
+
+                let saleSelected = false;
+                for (let checkbox of saleCheckboxes) {
+                    if (checkbox.checked) {
+                        if (checkbox.value === 'true' && itemSale) saleSelected = true;
+                        if (checkbox.value === 'false' && !itemSale) saleSelected = true;
+                    }
+                }
+                if (Array.from(saleCheckboxes).every(cb => !cb.checked) || saleSelected) {
+                    show = show && true;
+                } else {
+                    show = false;
+                }
+
+                item.style.display = show ? 'block' : 'none';
+            }
+        }
+
+        function resetFilters() {
+            document.getElementById('priceFrom').value = '';
+            document.getElementById('priceTo').value = '';
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.checked = false);
+            const items = document.getElementsByClassName('item');
+            for (let item of items) {
+                item.style.display = 'block';
+            }
+        }
+
+        function toggleFilter() {
+            const filter = document.querySelector('.filter');
+            filter.classList.toggle('active');
+        }
+
+        document.querySelectorAll('input[type="checkbox"], input[type="number"]').forEach(input => {
+            input.addEventListener('change', filterItems);
+        });
+        document.querySelector('button').addEventListener('click', resetFilters);
+    </script>
+</body>
+
+</html>

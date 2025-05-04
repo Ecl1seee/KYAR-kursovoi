@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>k2</id>
+    <name>Электрочайник TECHNO D2215EB</name>
+    <price>119.00</price>
+    <oldPrice>149.00</oldPrice>
+    <image>Photo/k2.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/k21.svg</thumbnail>
+        <thumbnail>Photo/k22.svg</thumbnail>
+        <thumbnail>Photo/k23.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>TECHNO</value>
+        </characteristic>
+        <characteristic>
+            <name>Защита от перегрева </name>
+            <value>Да</value>
+        </characteristic>
+        <characteristic>
+            <name>Объем</name>
+            <value>1.6 л</value>
+        </characteristic>
+        <characteristic>
+            <name>Мощность</name>
+            <value>2100 Вт</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал корпуса</name>
+            <value>Нержавеющая сталь</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал нагревательного элемента</name>
+            <value>Нержавеющая сталь</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип нагревательного элемента</name>
+            <value>Скрытый</value>
+        </characteristic>
+        <characteristic>
+            <name>Подсветка</name>
+            <value>Нет</value>
+        </characteristic>
+        <characteristic>
+            <name>Таймер </name>
+            <value>Нет</value>
+        </characteristic>
+    </characteristics>
+    <description>Стильный и функциональный чайник для быстрого нагрева воды.</description>
+    <manufacturer>
+        <name>BSH Hausgeräte GmbH</name>
+        <address>Carl-Wery-Straße 34, 81739 München, Germany</address>
+    </manufacturer>
+</product> 

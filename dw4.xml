@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <id>dw4</id>
+    <name>Посудомоечная машина Beko BDFN15421S</name>
+    <price>1449.00</price>
+    <oldPrice>1639.00</oldPrice>
+    <image>Photo/dw4.svg</image>
+    <thumbnails>
+        <thumbnail>Photo/dw41.svg</thumbnail>
+        <thumbnail>Photo/dw42.svg</thumbnail>
+        <thumbnail>Photo/dw43.svg</thumbnail>
+    </thumbnails>
+    <characteristics>
+        <characteristic>
+            <name>Бренд</name>
+            <value>Beko</value>
+        </characteristic>
+        <characteristic>
+            <name>Вместимость</name>
+            <value>14 комплектов</value>
+        </characteristic>
+        <characteristic>
+            <name>Расход воды за цикл</name>
+            <value>12.9 литров</value>
+        </characteristic>
+        <characteristic>
+            <name>Возможность использования средств 3 в 1</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Защита от протечек</name>
+            <value>Есть</value>
+        </characteristic>
+        <characteristic>
+            <name>Уровень шума</name>
+            <value>49 дБ</value>
+        </characteristic>
+        <characteristic>
+            <name>Материал внутренней поверхности</name>
+            <value>Нержавеющая сталь</value>
+        </characteristic>
+        <characteristic>
+            <name>Тип сушки</name>
+            <value>Конденсационный</value>
+        </characteristic>
+        <characteristic>
+            <name>Управление</name>
+            <value>Электронное</value>
+        </characteristic>
+    </characteristics>
+    <description>Прочная и стильная посудомоечная машина с несколькими программами мойки для идеального результата.</description>
+    <manufacturer>
+        <name>Arcelik A.S.</name>
+        <address>Karaagas Caddesi No:2-6, 34445, Sutluce, Istanbul, Турция</address>
+    </manufacturer>
+</product> 
