@@ -23,6 +23,23 @@ body {
   box-sizing: border-box;
   margin: auto;
   height: auto;
+  position: relative;
+}
+.forma .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+.forma .close-button:hover {
+  color: #0072ff;
 }
 .forma .reg {
   font-size: 2rem;

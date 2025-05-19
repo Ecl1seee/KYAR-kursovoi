@@ -10,6 +10,7 @@
 
 <body>
     <form class="forma" onsubmit="storeRegistrationData(event)">
+        <button class="close-button" onclick="goToMainPage()">×</button>
         <h2 class="reg">Зарегистрироваться</h2>
         <div class="form-row">
             <div class="form-group">
@@ -41,6 +42,9 @@
             localStorage.setItem('registeredPassword', password);
 
             window.location.href = 'entry.html';
+        }
+        function goToMainPage() {
+            window.location.href = 'main-page.html';
         }
     </script>
 </body>

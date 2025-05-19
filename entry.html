@@ -10,6 +10,7 @@
 
 <body>
     <form class="forma" onsubmit="validateCredentials(event)">
+        <button class="close-button" onclick="goToMainPage()">×</button>
         <h2 class="reg">Вход</h2>
         <div class="form-group">
             <input type="email" name="Email" id="email" placeholder="Email" required>
@@ -39,10 +40,14 @@
 
             if (email === storedEmail && password === storedPassword) {
                 alert('Вход выполнен успешно!');
-                window.location.href = 'TecHome.html';
+                window.location.href = 'main-page.html';
             } else {
                 alert('Неверный email или пароль');
             }
+        }
+
+        function goToMainPage() {
+            window.location.href = 'main-page.html';
         }
     </script>
 </body>
